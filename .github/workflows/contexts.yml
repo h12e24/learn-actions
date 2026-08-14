@@ -3,5 +3,7 @@ on: push
 jobs:
   context:
     runs-on: ubuntu-latest
+    env:
+      ACTOR: ${{ github.actor }}
     steps:
-      - run: echo "${{ github.actor }} is running this workflow on the ${GITHUB_REF} branch of the ${GITHUB_REPOSITORY} repository."
+      - run: echo "${ACTOR} is running this workflow on the ${GITHUB_REF} branch of the ${GITHUB_REPOSITORY} repository."
