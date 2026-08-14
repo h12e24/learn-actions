@@ -1,0 +1,9 @@
+name: Cron
+on:
+  schedule:
+    - cron: '*/30 0 * * *'
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: date
