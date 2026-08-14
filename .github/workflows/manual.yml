@@ -12,6 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "${{ github.event.inputs.greeting }}, world!"
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v7
         with:
           go-version: '1.24'
