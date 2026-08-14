@@ -1,0 +1,7 @@
+name: Contexts
+on: push
+jobs:
+  context:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ github.actor }} is running this workflow on the ${GITHUB_REF} branch of the ${GITHUB_REPOSITORY} repository."
